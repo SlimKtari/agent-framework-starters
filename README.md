@@ -25,11 +25,12 @@ The repository is intended for:
 ## Getting Started
 
 1. Clone the repository
-2. Configure environment variables (see sample `.env.example`)
-3. Open the solution/workspace
-4. Run any sample project from `/samples`
-
-Each sample contains its own README with instructions and context.
+2. Open the solution
+3. Configure **User Secrets** to populate the required `appsettings` values for each project
+4. Run any sample project
+5. Browse:
+- **/docs** → OpenAPI UI allowing you to run and test the endpoints  
+- **/devui** → Launches the Microsoft Agent Framework DevUI to test agents or workflows
 
 ---
 
