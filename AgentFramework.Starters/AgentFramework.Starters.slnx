@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="AgentFramework.ChatWithPlugin/AgentFramework.ChatWithPlugin.csproj" Id="21c31519-d1eb-440e-8287-1ab914883faa" />
   <Project Path="AgentFramework.HelloAgent/AgentFramework.HelloAgent.csproj" />
 </Solution>
