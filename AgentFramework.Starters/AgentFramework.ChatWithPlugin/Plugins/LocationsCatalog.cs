@@ -1,11 +1,10 @@
 ﻿using System.ComponentModel;
-using Microsoft.Extensions.AI;
 
 namespace AgentFramework.ChatWithPlugin.Plugins;
 
 public record Room(string Name, int Capacity, bool IsAvailable, string LocationName);
 
-public class LocationsCatalog : AITool
+public class LocationsCatalog
 {
     [Description("Find available rooms at a given location within a time range. " +
         "Returns room details including capacity and availability status.")]

@@ -1,5 +1,5 @@
-﻿using AgentFramework.AgentWithStructuredOutput.Plugins;
-using AgentFramework.MultiAgentsWorkflows.Models;
+﻿using AgentFramework.MultiAgentsWorkflows.Models;
+using AgentFramework.MultiAgentsWorkflows.Plugins;
 using AgentFramework.MultiAgentsWorkflows.WorkflowTools;
 using Microsoft.Agents.AI;
 using Microsoft.Agents.AI.Hosting;

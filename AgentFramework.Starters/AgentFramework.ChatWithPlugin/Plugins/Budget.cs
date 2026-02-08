@@ -1,9 +1,8 @@
 ﻿using System.ComponentModel;
-using Microsoft.Extensions.AI;
 
 namespace AgentFramework.ChatWithPlugin.Plugins;
 
-public class Budget : AITool
+public class Budget
 {
     [Description("Get current budget available.")]
     public string CurrentBudgetAvailable()

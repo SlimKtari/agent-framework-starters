@@ -5,21 +5,25 @@ public static class AiPlatformExtensions
 {
     public static WebApplicationBuilder AddAiPlatform(this WebApplicationBuilder builder)
     {
-        builder.AddOpenAIResponses();
-        builder.AddOpenAIChatCompletions();
+        // Register services for OpenAI responses and conversations (required for DevUI)
+        builder.Services.AddOpenAIResponses();
         builder.Services.AddOpenAIConversations();
-        builder.AddDevUI();
+        builder.Services.AddOpenAIChatCompletions();
+        builder.Services.AddDevUI();
         return builder;
     }
 
     public static WebApplication MapAiPlatform(this WebApplication app)
     {
+        // Map endpoints for OpenAI responses and conversations (required for DevUI).
+        app.MapOpenAIResponses();
+        app.MapOpenAIConversations();
+        
         if (app.Environment.IsDevelopment())
         {
             app.MapDevUI();
         }
-        app.MapOpenAIResponses();
-        app.MapOpenAIConversations();
+
         return app;
     }
 }
