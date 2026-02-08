@@ -6,14 +6,14 @@ builder.Services.AddProblemDetails();
 builder.AddAppOpenApi();
 builder.Services.AddControllers();
 
-// Add AI platform services and agents
-builder.AddAiPlatform();
-
 // Initialize Azure Chat Client and register it for agent use.
 builder.AddChatClient();
 
 // Register event planning agents and get handles for mapping endpoints.
 AgentHandles agents = builder.AddEventPlanningAgents();
+
+// Add AI platform services and agents
+builder.AddAiPlatform();
 
 var app = builder.Build();
 app.MapControllers();
